@@ -15,8 +15,8 @@ const App = () => {
     <Router>
       <div>
         <SavedList list={savedList} />
-        <Route path='/' component={MovieList} />
-        <Route paht='/movies/1' component={Movie} />
+        <Route path='/' exact component={MovieList} />
+        <Route path='/movies/:id' component={Movie} />
       </div>
     </Router>
   );
